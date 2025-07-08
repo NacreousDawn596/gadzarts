@@ -143,29 +143,40 @@ h4 {
     color: white;
 }
 
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar-brand span {
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+}
+
+.bg-primary-gradient {
+    background: linear-gradient(135deg, var(--primary), var(--dark));
+}
+
 .nav-link {
     position: relative;
-    padding: 8px 15px;
     font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease;
 }
 
 .nav-link:after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 10%;
+    left: 50%;
     width: 0;
     height: 2px;
-    background: var(--secondary);
-    transition: width 0.3s ease;
+    background: white;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
 }
 
-.nav-link:hover:after {
-    width: 80%;
-}
-
+.nav-link:hover:after,
 .nav-link.active:after {
-    width: 80%;
+    width: 70%;
 }
 
 .stat-card {

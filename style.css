@@ -16,6 +16,8 @@ body {
     background-color: #f8fafc;
     color: var(--dark);
     scroll-behavior: smooth;
+    width: 100vh;
+    overflow-x: hidden;
 }
 
 .hero {
